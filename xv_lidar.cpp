@@ -1,4 +1,4 @@
-#include "lidar.h"
+#include "xv_lidar.h"
 
 // initialization
 Lidar::Lidar() : rpmPID(xv_config.Kp, xv_config.Ki, xv_config.Kd), aryDist{}, aryQuality{0} {
