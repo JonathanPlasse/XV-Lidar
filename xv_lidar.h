@@ -68,15 +68,9 @@ public:
     void processSignalStrength(int iQuad); // Process the Signal Strengths of the packet
     byte eValidatePacket(); // Check the validity of the packet
     void initConfig(); // Init the lidar config
-    void setAngle();
     void motorOff();
     void motorOn();
     void motorCheck();
-    void setRPM();
-    void setKp();
-    void setKi();
-    void setKd();
-    void setSampleTime();
 
 private:
     float pwm_val = 127;          // start with ~50% power

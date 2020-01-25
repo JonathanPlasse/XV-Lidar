@@ -266,20 +266,6 @@ void Lidar::initConfig() {
     xv_config.aryAngles[ix] = true;
 }
 
-/*
-   doSetAngle - Multi-angle range(s) implementation - DSH
-   Command: SetAngles ddd, ddd-ddd, etc.
-   Enter with: N/A
-   Uses:       xv_config.aryAngles (an array of 360 booleans) is set to appropriate values
-   Calls:      showDist
-   Exits with: N/A
-   TEST THIS STRING:  SetAngles 16-20, 300-305, 123-124, 10
-*/
-void Lidar::setAngle() {
-  /* for (int ix = 0; ix < N_ANGLES; ix++)
-    xv_config.aryAngles[ix] = true; */
-}
-
 void Lidar::motorOff() {
   xv_config.motor_enable = false;
   analogWrite(xv_config.motor_pwm_pin, 0);
